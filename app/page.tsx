@@ -127,8 +127,12 @@ export default function Home() {
       )}
 
       <div className='svg-container'>
-        <img src='/beaverclosed.svg' alt='Beaver with mouth closed' className='beaver beaver-closed' />
-        <img src='/beaveropen.svg' alt='Beaver with mouth open' className='beaver beaver-open' />
+        <img
+          src='https://idevelopbugs.github.io/breathbeaver/beaverclosed.svg'
+          alt='Beaver with mouth closed'
+          className='beaver beaver-closed'
+        />
+        <img src='https://idevelopbugs.github.io/breathbeaver/beaveropen.svg' alt='Beaver with mouth open' className='beaver beaver-open' />
       </div>
 
       {isPlaying && <div className='timer'>{formatTime(timer)}</div>}
@@ -160,7 +164,7 @@ export default function Home() {
         </div>
       )}
 
-      <audio ref={audioRef} src='/audio.mp3' />
+      <audio ref={audioRef} src='https://idevelopbugs.github.io/breathbeaver/audio.mp3' />
     </div>
   );
 }
