@@ -1,0 +1,48 @@
+.svg-container {
+  position: relative;
+  width: 200px; // Adjust to match your SVG size
+  height: 200px; // Adjust to match your SVG size
+
+  .beaver {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0; // Hidden by default
+
+    &.beaver-closed {
+      opacity: 1; // Show the closed-mouth SVG by default
+    }
+  }
+
+  &.animate .beaver-closed {
+    animation: showBeaverClosed 3.6s infinite;
+  }
+
+  &.animate .beaver-open {
+    animation: showBeaverOpen 3.6s infinite 1.8s;
+  }
+}
+
+@keyframes showBeaverClosed {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showBeaverOpen {
+  0%,
+  50% {
+    opacity: 1;
+  }
+  50.01%,
+  100% {
+    opacity: 0;
+  }
+}
