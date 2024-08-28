@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  basePath: '/breathbeaver',
   output: 'export',
+  reactStrictMode: true,
   eslint: {
     ignoreDuringBuilds: true,
   },
